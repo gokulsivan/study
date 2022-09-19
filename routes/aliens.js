@@ -4,8 +4,8 @@ const Alien = require('../models/alien')
 
 router.get('/',async(req,res)=>{
     try{
-        const aliens = await Alien.find()
-        res.json(aliens)
+        const alien = await Alien.find()
+        res.json(alien)
     }catch(err){
         res.send('Error' + err)
     }
